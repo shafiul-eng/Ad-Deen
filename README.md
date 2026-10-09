@@ -1,36 +1,48 @@
-## Ad-Deen (আদ-দ্বীন)
+# Ad-Deen (আদ-দ্বীন)
 
 ![License](https://img.shields.io/badge/License-MIT-C9A24B) ![Language](https://img.shields.io/badge/Language-Bengali-1F6F5C) ![Tech](https://img.shields.io/badge/Tech-Vanilla_JS-1F6F5C) ![Offline](https://img.shields.io/badge/Offline-First-C9A24B)
 
-**Ad-Deen** একটি সম্পূর্ণ অফলাইন, বিজ্ঞাপনমুক্ত, বাংলা ভাষার ইসলামিক ওয়েব অ্যাপ্লিকেশন — দিনের পাঁচ ওয়াক্ত নামাযকে কেন্দ্র করে সাজানো, যাতে প্রতিটি সময়-পর্বে উপযোগী আমল, দোয়া ও রিমাইন্ডার স্বয়ংক্রিয়ভাবে সামনে চলে আসে।
+**Ad-Deen** is a fully offline, ad-free, Bengali-language Islamic web application centered around the five daily prayers. It automatically surfaces time-specific deeds, supplications (duas), and reminders tailored to each prayer window.
 
-### বৈশিষ্ট্য
-- **নামাযের সময়** — অক্ষাংশ/দ্রাঘিমাংশ থেকে গাণিতিক সূত্রে অফলাইনে হিসাব, লাইভ কাউন্টডাউন
-- **কুরআন** — আয়াতুল কুরসি, ৩ কুল, আল-ফাতিহা সরাসরি (অফলাইন) + সম্পূর্ণ ১১৪ সূরার লাইব্রেরি (প্রথমবার অনলাইনে লোড হয়ে এরপর ফোনেই সংরক্ষিত থাকে)
-- **নামায ও দোয়া** — মাসনুন দোয়া সংকলন, সুন্নাত চেকলিস্ট, কাস্টম দোয়া বুক
-- **টুলস** — যাকাত, ফিদইয়া, কাফফারা ক্যালকুলেটর; কাযা/বিতর/তাহাজ্জুদ/রোজা ট্র্যাকার; মাল্টি-তসবীহ; হিজরি তারিখ
-- **শিক্ষা** — হাদিস সংকলন, নবী-সাহাবিদের জীবনী, কুইজ, মিথ বনাম ফ্যাক্ট, অভিধান, শিশুদের নাম, হালাল ফুড কোড গাইড
-- **জার্নাল** — শুকরিয়া ও মুহাসাবা ডায়েরি, ৩০-দিন হ্যাবিট ক্যালেন্ডার, ব্যক্তিগত অসিয়তনামা, মাসিক প্রগ্রেস রিপোর্ট
+## Key Features
 
-### নতুন: ইবাদত ট্যাব
-- **অ্যালার্ম** — ৫ ওয়াক্তের আযান + সূর্যোদয়, ইশরাক, চাশত, আওয়াবিন, তাহাজ্জুদ ও জুমার প্রস্তুতি; ৩০ মিনিট আগে থেকে ১০ মিনিট পর পর্যন্ত অফসেট; নিজের অ্যালার্ম (প্রতিদিন / সাপ্তাহিক / মাসিক ইংরেজি বা হিজরি তারিখ / একবার); স্নুজ; নিজের আযান-অডিও ফাইল
-- **ইবাদত ছক** — দৈনিক (১৮), সাপ্তাহিক (১২), মাসিক (১০) চেকলিস্ট, নতুন দিন/সপ্তাহ/মাসে নিজে রিসেট, অগ্রগতি বার
-- **কিবলা** কম্পাস, **বিশেষ দিন** কাউন্টডাউন (রমজান, ঈদ, আরাফা, আশুরা, আইয়ামে বীজ…)
-- **সেটিংস** — হালকা/গাঢ় মোড, ৪টি রঙ, লেখার সাইজ, ব্যাকআপ/রিস্টোর, ইনস্টল, হিজরি ±২ দিন সমন্বয়
+- **Prayer Times:** Accurate offline calculations using mathematical formulas based on latitude/longitude, complete with a live countdown timer.
+- **Quran:** Pre-loaded essential surahs (Ayatul Kursi, 3 Quls, Al-Fatiha) for instant offline access + full 114 Surah library (cached locally on your device after the initial online load).
+- **Prayers & Duas:** Comprehensive Masnoon Dua collection, Sunnah checklist, and customizable personal Dua book.
+- **Islamic Tools:** Zakat, Fidya, and Kaffara calculators; trackers for Qaza, Witr, Tahajjud, and fasting; digital multi-Tasbih counter; and accurate Hijri calendar integration.
+- **Education & Learning:** Hadith collections, biographies of the Prophets and Sahabah, interactive quizzes, Myths vs. Facts guide, Islamic dictionary, baby names directory, and a Halal food E-code guide.
+- **Journaling & Reflection:** Shukr (gratitude) & Muhasaba (self-evaluation) diary, 30-day habit calendar, personal Wasiyah (will) generator, and monthly progress reports.
 
-> ⚠️ ওয়েব অ্যাপ হিসেবে অ্যালার্ম শুধু তখনই বাজে যখন অ্যাপ/ব্রাউজার চালু (ব্যাকগ্রাউন্ডসহ) থাকে। অ্যাপ সম্পূর্ণ বন্ধ থাকলেও আযান বাজাতে চাইলে Capacitor দিয়ে Android অ্যাপে রূপান্তর করে Local Notifications প্লাগইন ব্যবহার করতে হবে।
+## New: Worship (Ibadah) Tab
 
-### GitHub Pages-এ চালু করার নিয়ম
-১. ফাইলগুলো রিপোজিটরির `main` ব্রাঞ্চে আপলোড করুন। ২. Settings → Pages → Source: **GitHub Actions** বেছে নিন। ৩. পুশ করলেই `.github/workflows/pages.yml` নিজে ডিপ্লয় করবে।
+- **Alarms & Notifications:**
+  - Adhan alerts for all 5 daily prayers plus Sunrise, Ishraq, Duha (Chasht), Awwabin, Tahajjud, and Jummah preparation.
+  - Flexible offsets (from -30 minutes before to +10 minutes after prayer times).
+  - Custom alarms (Daily, Weekly, Monthly via Gregorian or Hijri calendar, or One-time).
+  - Snooze functionality and custom Adhan audio file support.
+- **Worship Tracker:** Daily (18), Weekly (12), and Monthly (10) checklists with manual reset capabilities and visual progress bars.
+- **Qibla Compass & Event Countdown:** Interactive Qibla direction finder and live countdowns for key Islamic events (Ramadan, Eid, Day of Arafah, Ashura, Ayyam al-Beed, etc.).
+- **Settings & Customization:** Light/Dark themes, 4 color schemes, adjustable font sizes, seamless data backup & restore, PWA installation support, and manual Hijri date adjustment (±2 days).
 
-### টেকনিক্যাল
-- `index.html` + `assets/features.js` — কোনো বিল্ড স্টেপ বা বহিরাগত লাইব্রেরি লাগে না
-- সব ব্যক্তিগত ডেটা `localStorage`-এ সংরক্ষিত থাকে — কোথাও পাঠানো হয় না
-- কুরআনের সম্পূর্ণ টেক্সট আনার জন্য একবার [alquran.cloud](https://alquran.cloud) API (তানজিল.নেট সোর্স) ব্যবহার হয়, এরপর অফলাইনে কাজ করে।
+> ⚠️ **Note on Web Alarms:** As a web application, scheduled alarms will trigger only while the app or browser remains active (including in background tabs). For background alarms when the app is completely closed, convert the project into a native Android app using Capacitor with the Local Notifications plugin.
 
-### দায়বদ্ধতা
-সকল তথ্য শিক্ষামূলক উদ্দেশ্যে দেওয়া। নামাযের সময়, যাকাত, ফিদইয়া-কাফফারা ও অন্যান্য মাসআলার ক্ষেত্রে চূড়ান্ত সিদ্ধান্তের আগে স্থানীয় নির্ভরযোগ্য আলেমের পরামর্শ নেওয়া উচিত।
+## Deployment via GitHub Pages
+
+1. Upload project files to the `main` branch of your repository.
+2. Navigate to **Settings** → **Pages** → **Source** and select **GitHub Actions**.
+3. Push your changes; `.github/workflows/pages.yml` will handle automated deployment.
+
+## Technical Highlights
+
+- **Zero Dependencies:** Built with pure `index.html` and `assets/features.js` — no build steps, bundlers, or external libraries required.
+- **Privacy-First:** All personal data is stored strictly inside local device storage (`localStorage`). Zero telemetry, tracking, or remote server calls.
+- **Smart Caching:** Full Quran text is fetched once from the [alquran.cloud](https://alquran.cloud) API (Tanzil.net source) and cached locally for complete offline usability thereafter.
+
+## Disclaimer
+
+All information provided within this application is intended for educational purposes. For critical decisions regarding prayer schedules, Zakat calculations, Fidya, Kaffara, or legal rulings (Fiqh), please consult a qualified local Islamic scholar.
 
 ---
-Made with ♥ for the Ummah.
-# Ad-Deen
+
+Made with ♥ for the Ummah.  
+**Ad-Deen** | Developed by Shafiul Islam
